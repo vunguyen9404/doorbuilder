@@ -1,0 +1,1593 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,300italic,700italic&subset=latin,latin-ext);
+@-webkit-keyframes example {
+    from {
+        -webkit-transform: perspective(300) rotateY(-90deg);
+        -webkit-transform-origin: 0% 0%
+    }
+    to {
+        -webkit-transform: perspective(300) rotateY(0deg);
+        -webkit-transform-origin: 0% 0%
+    }
+}
+.clear {
+    clear: both
+}
+.inline {
+    display: inline
+}
+.zoom {
+    width: 100%;
+    height: 100%
+}
+.zoom.zoom-10 {
+    width: 110%;
+    height: 110%;
+    position: relative;
+    margin-left: -5%;
+    margin-top: -5%
+}
+.zoom.zoom-20 {
+    width: 120%;
+    height: 120%;
+    position: relative;
+    margin-left: -10%;
+    margin-top: -10%
+}
+.zoom.zoom-30 {
+    width: 130%;
+    height: 130%;
+    position: relative;
+    margin-left: -15%;
+    margin-top: -15%
+}
+.zoom.zoom-40 {
+    width: 140%;
+    height: 140%;
+    position: relative;
+    margin-left: -20%;
+    margin-top: -20%
+}
+.zoom.zoom-50 {
+    width: 150%;
+    height: 150%;
+    position: relative;
+    margin-left: -25%;
+    margin-top: -25%
+}
+.zoom.zoom-60 {
+    width: 160%;
+    height: 160%;
+    position: relative;
+    margin-left: -30%;
+    margin-top: -30%
+}
+.zoom.zoom-70 {
+    width: 170%;
+    height: 170%;
+    position: relative;
+    margin-left: -35%;
+    margin-top: -35%
+}
+.zoom.zoom-80 {
+    width: 180%;
+    height: 180%;
+    position: relative;
+    margin-left: -40%;
+    margin-top: -40%
+}
+.zoom.zoom-90 {
+    width: 190%;
+    height: 190%;
+    position: relative;
+    margin-left: -45%;
+    margin-top: -45%
+}
+.zoom.zoom-h-60 {
+    width: 160%;
+    position: relative;
+    margin-left: -30%
+}
+.zoom.zoom-v-30 {
+    height: 130%;
+    position: relative;
+    margin-top: -148px
+}
+.shadow {
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-transition: box-shadow, 0.1s, ease-in;
+    -khtml-transition: box-shadow, 0.1s, ease-in;
+    -moz-transition: box-shadow, 0.1s, ease-in;
+    -ms-transition: box-shadow, 0.1s, ease-in;
+    -o-transition: box-shadow, 0.1s, ease-in;
+    transition: box-shadow, 0.1s, ease-in
+}
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-align-content: flex-end;
+    align-content: flex-end
+}
+.vert-center {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute
+}
+body {
+    font-size: 1.2em;
+    background: #fff
+}
+.app {
+    position: relative;
+    overflow: hidden
+}
+#container {
+    padding: 0;
+    overflow-x: hidden
+}
+#content {
+    float: left
+}
+.section {
+    float: left;
+    width: 100%;
+    padding: 1.6rem 0 1.8rem;
+    margin: 0;
+    position: relative
+}
+.floatleft {
+    float: left;
+    width: 100%
+}
+p {
+    font-size: 1.26em;
+    line-height: 1.8em;
+    font-family: Roboto;
+    font-weight: 300;
+    margin-bottom: 1.6em
+}
+p.small {
+    font-size: 1em;
+    line-height: 1.4em
+}
+.bold-text,
+b {
+    font-family: Roboto;
+    font-weight: 700
+}
+.white-text p,
+p.white-text {
+    color: #fff
+}
+.blue-text p,
+p.blue-text {
+    color: #0284c3
+}
+.nowrap {
+    white-space: nowrap
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 1.2em;
+    color: #bfda38
+}
+h1 {
+    font-size: 9em;
+    line-height: .8em;
+    margin-bottom: .06em
+}
+h2 {
+    font-size: 6em
+}
+h3 {
+    font-size: 2.5em;
+    line-height: 1em
+}
+h4 {
+    font-size: 1.7em;
+    font-family: Roboto;
+    font-weight: 100
+}
+h5 {
+    font-size: 1.6em
+}
+h6 {
+    font-size: 1.4em
+}
+html,
+body,
+.app,
+.page {
+    width: 100%;
+    height: 100%
+}
+html,
+body {
+    background-color: #333333
+}
+#wrapper {
+    width: 1000px;
+    height: 706px;
+    background-color: #FFF;
+    margin: 0 auto;
+}
+.cursor {
+    cursor: pointer
+}
+a,
+a:visited {
+    text-decoration: none;
+    -webkit-transition: color 0.2s linear;
+    -moz-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+    color: #9a9a9a;
+    cursor: pointer
+}
+a:hover,
+a:active {
+    -webkit-transition: color 0.2s linear;
+    -moz-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+    text-decoration: none;
+    color: #bfda38
+}
+a.more-button {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.2em;
+    font-family: Roboto;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 9px;
+    border-radius: 24px;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #000;
+    webkit-transition: background-color 0.2s linear;
+    -moz-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear
+}
+a.more-button:hover {
+    background-color: #fff
+}
+a.blue-button {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    font-size: 1em;
+    font-family: Roboto;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 9px;
+    border-radius: 24px;
+    background-color: #0284c3;
+    color: #fff;
+    webkit-transition: background-color 0.2s linear;
+    -moz-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear
+}
+a.blue-button:hover {
+    background-color: #016291
+}
+.padding-1r {
+    padding: 1rem
+}
+.padding-2r {
+    padding: 2rem
+}
+.padding-3r {
+    padding: 3rem
+}
+.padding-top-1r {
+    padding-top: 1rem
+}
+.padding-top-2r {
+    padding-top: 2rem
+}
+.padding-top-3r {
+    padding-top: 3rem
+}
+.padding-top-4r {
+    padding-top: 4rem
+}
+.padding-bottom-1r {
+    padding-bottom: 1rem
+}
+.padding-bottom-2r {
+    padding-bottom: 2rem
+}
+.padding-bottom-3r {
+    padding-bottom: 3rem
+}
+.padding-bottom-4r {
+    padding-bottom: 4rem
+}
+.padding-left-1r {
+    padding-left: 1rem
+}
+.padding-left-2r {
+    padding-left: 2rem
+}
+.padding-left-3r {
+    padding-left: 3rem
+}
+.padding-left-4r {
+    padding-left: 4rem
+}
+.padding-right-1r {
+    padding-right: 1rem
+}
+.padding-right-2r {
+    padding-right: 2rem
+}
+.padding-right-3r {
+    padding-right: 3rem
+}
+.padding-right-4r {
+    padding-right: 4rem
+}
+.margin-top-1r {
+    margin-top: 1rem
+}
+.margin-top-2r {
+    margin-top: 2rem
+}
+.margin-top-3r {
+    margin-top: 3rem
+}
+.margin-top-4r {
+    margin-top: 4rem
+}
+.margin-right-1r {
+    margin-right: 1rem
+}
+.margin-right-2r {
+    margin-right: 2rem
+}
+.margin-right-3r {
+    margin-right: 3rem
+}
+.margin-right-4r {
+    margin-right: 4rem
+}
+.margin-bottom-1r {
+    margin-bottom: 1rem
+}
+.margin-bottom-2r {
+    margin-bottom: 2rem
+}
+.margin-bottom-3r {
+    margin-bottom: 3rem
+}
+.margin-bottom-4r {
+    margin-bottom: 4rem
+}
+.bottom_divider {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1.6em
+}
+.fieldgroup {
+    max-width: 46%;
+    margin: 0 auto
+}
+.fieldgroup h5 {
+    margin-bottom: 1.6em;
+    text-transform: uppercase
+}
+.fieldgroup .form-control {
+    background-color: #ccc;
+    margin-bottom: 1em;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    color: #092d44;
+    height: 3.5em;
+    border-radius: 6px
+}
+.fieldgroup .welcome {
+    font-size: 16px
+}
+.fieldgroup .red {
+    color: #FF0000
+}
+.fieldgroup .form-control::-webkit-input-placeholder,
+.fieldgroup .nofile {
+    color: #dcdcdc
+}
+.fieldgroup .file-upload-container {
+    position: relative
+}
+.fieldgroup .file-upload-container .file-upload-override-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16%;
+    height: 100%;
+    line-height: 2em;
+    font-size: 1.6em;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #0284c3;
+    webkit-transition: background-color 0.2s linear;
+    -moz-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear;
+    border-radius: 0 6px 6px 0
+}
+.fieldgroup .file-upload-container .file-upload-override-button:hover {
+    background-color: #016291
+}
+.fieldgroup .file-upload-container .error {
+    margin-top: 10px
+}
+.fieldgroup .file-upload-container .file-upload-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0)
+}
+.fieldgroup .file-upload-container .file-upload-filename {
+    height: auto;
+    padding: 8px 0
+}
+.fieldgroup .iagree {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center
+}
+.fieldgroup .iagree p {
+    display: inline-block;
+    margin: 0 0 1em
+}
+.fieldgroup .iagree p a {
+    color: #092d44;
+    border-bottom: 1px solid #092d44
+}
+.fieldgroup .iagree p a:hover {
+    color: #0f4b71
+}
+.fieldgroup .iagree input {
+    margin: 0 6px 0 0;
+    vertical-align: text-top
+}
+.fieldgroup .btn {
+    width: 100%;
+    height: 3.5em;
+    font-size: 1.2em;
+    font-family: Roboto;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 9px;
+    margin-bottom: 1em;
+    border-radius: 6px;
+    background-color: #0284c3;
+    color: #fff;
+    webkit-transition: background-color 0.2s linear;
+    -moz-transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear
+}
+.fieldgroup .btn:hover {
+    background-color: #016291
+}
+.formalert p {
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 1px
+}
+.formalert p i {
+    margin-right: 3px
+}
+.formalert .success {
+    color: #18c518
+}
+.formalert .failure {
+    color: #e0043d
+}
+.page.design-selection h3 {
+    color: #adcb37
+}
+.page.design-selection .layout-list {
+    -webkit-transition: opacity, 0.2s, ease-in;
+    -khtml-transition: opacity, 0.2s, ease-in;
+    -moz-transition: opacity, 0.2s, ease-in;
+    -ms-transition: opacity, 0.2s, ease-in;
+    -o-transition: opacity, 0.2s, ease-in;
+    transition: opacity, 0.2s, ease-in;
+    padding: 5px
+}
+.page.design-selection .layout-list:hover {
+    filter: alpha(opacity=80);
+    opacity: .8
+}
+.page.design-selection .layout-list:hover p {
+    color: #bfda38
+}
+.page.design-selection .layout-list img {
+    width: 100%;
+    height: 100%
+}
+.page.design-selection .layout-list img:hover {
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-transition: box-shadow, 0.1s, ease-in;
+    -khtml-transition: box-shadow, 0.1s, ease-in;
+    -moz-transition: box-shadow, 0.1s, ease-in;
+    -ms-transition: box-shadow, 0.1s, ease-in;
+    -o-transition: box-shadow, 0.1s, ease-in;
+    transition: box-shadow, 0.1s, ease-in
+}
+.page.design-selection .layout-list p {
+    color: #9a9a9a;
+    font-weight: 500
+}
+.footer {
+    position: absolute;
+    bottom: 30px;
+    left: 30px
+}
+.lightbox {
+    display: none;
+    opacity: 0;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: all 0.5s;
+}
+.lightbox.show {
+    opacity: 1
+}
+
+.lightbox .lightbox-close {
+    margin-right: auto;
+    margin-left: auto;
+    top: 25%;
+    right: 25%;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 3px;
+    margin-right: 4px;
+    color: #bfda38;
+    font-size: 32px
+}
+.lightbox .lightbox-body {
+    background: #fff;
+    width: 50%;
+    padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    top: 25%;
+    left: 25%;
+    position: absolute
+}
+.lightbox .lightbox-body img {
+    max-width: 90%;
+    max-height: 80%;
+    margin-top: 2%
+}
+.lightbox .lightbox-body h5 {
+    margin-bottom: 10px
+}
+.lightbox .lightbox-body p {
+    line-height: 1.5em;
+    margin-bottom: 0
+}
+.form-group {
+    text-align: left
+}
+.btn {
+    border-radius: 3px
+}
+.btn.btn-default {
+    color: #000;
+    background-color: #ccc;
+    border-color: #cbc8c8;
+    font-size: 12px
+}
+.btn.btn-default:hover {
+    background-color: #9E9E9E
+}
+.selection-nav {
+    position: absolute;
+    bottom: 35px;
+    right: 40px
+}
+.selection-nav .nav-item .item {
+    color: #FFF;
+    display: inline;
+    padding: 0px 10px 0px 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    text-transform: uppercase
+}
+.selection-nav .nav-item .item:last-child {
+    border-right: 0px
+}
+.app .gradient-box-left {
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.3) 0%, transparent 30%);
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3) 0%, transparent 30%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, transparent 30%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#00000000', GradientType=1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.app .gradient-box-right {
+    background: -moz-linear-gradient(left, transparent 30%, rgba(0, 0, 0, 0.3) 100%);
+    background: -webkit-linear-gradient(left, transparent 30%, rgba(0, 0, 0, 0.3) 100%);
+    background: linear-gradient(to right, transparent 30%, rgba(0, 0, 0, 0.3) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#4d000000', GradientType=1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    height: 100%
+}
+.app .gradient-box-top {
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, transparent 20%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, transparent 20%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, transparent 20%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#00000000', GradientType=0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    height: 100%
+}
+.app .gradient-box-bottom {
+    background: -moz-linear-gradient(top, transparent 80%, rgba(0, 0, 0, 0.3) 100%);
+    background: -webkit-linear-gradient(top, transparent 80%, rgba(0, 0, 0, 0.3) 100%);
+    background: linear-gradient(to bottom, transparent 80%, rgba(0, 0, 0, 0.3) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#4d000000', GradientType=0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    height: 100%
+}
+.app input.form-control,
+.app select.form-control {
+    height: 28px;
+    padding: 6px 6px;
+    font-size: 12px
+}
+.app .form-group label {
+    font-size: 10px
+}
+.app .form-group.newsletter-container {
+    margin-bottom: 0px
+}
+.app .form-group.newsletter-container label {
+    margin-bottom: 0px
+}
+.app .form-group.required-notice {
+    text-align: right;
+    margin-top: 5px
+}
+.app .form-group.notice-container {
+    line-height: 1em
+}
+.app .form-group.notice-container .notice {
+    line-height: 1em;
+    font-style: italic;
+    font-size: 10px
+}
+.app .zoom-controls {
+    position: absolute;
+    top: 100px;
+    left: 95%
+}
+.app .zoom-controls .zoom {
+    font-size: 18px;
+    color: #FFF;
+    display: inline
+}
+.app .zoom-controls .zoom.zoom-out {
+    margin-right: 20px
+}
+.app .request-quote .lightbox-close {
+    top: 7%
+}
+.app .request-quote .lightbox-body {
+    top: 7%
+}
+.app .request-quote .lightbox-body p {
+    font-size: 12px;
+    margin-bottom: 20px
+}
+.app .request-quote .lightbox-body h5 {
+    font-size: 16px;
+    margin-bottom: 5px
+}
+.app .request-quote .lightbox-body textarea {
+    resize: vertical;
+    min-height: 50px
+}
+.app .request-quote form {
+    margin: 20px 20px 5px 20px
+}
+.app .design.zoom-out .zoom {
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transition: scale, 1.3s, linear;
+    -khtml-transition: scale, 1.3s, linear;
+    -moz-transition: scale, 1.3s, linear;
+    -ms-transition: scale, 1.3s, linear;
+    -o-transition: scale, 1.3s, linear;
+    transition: scale, 1.3s, linear
+}
+.app .design.zoom-out .door-container,
+.app .design.zoom-out .room-style {
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -webkit-transition: scale, 1.3s, linear;
+    -khtml-transition: scale, 1.3s, linear;
+    -moz-transition: scale, 1.3s, linear;
+    -ms-transition: scale, 1.3s, linear;
+    -o-transition: scale, 1.3s, linear;
+    transition: scale, 1.3s, linear
+}
+.app .design.zoom-in .zoom {
+    -ms-transform: scale(1.2, 1.2);
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+    -webkit-transition: scale, 1.3s, linear;
+    -khtml-transition: scale, 1.3s, linear;
+    -moz-transition: scale, 1.3s, linear;
+    -ms-transition: scale, 1.3s, linear;
+    -o-transition: scale, 1.3s, linear;
+    transition: scale, 1.3s, linear
+}
+.app .design.zoom-in .door-container,
+.app .design.zoom-in .room-style {
+    -ms-transform: scale(1.2, 1.3);
+    -webkit-transform: scale(1.2, 1.3);
+    transform: scale(1.2, 1.3);
+    -webkit-transition: scale, 1.3s, linear;
+    -khtml-transition: scale, 1.3s, linear;
+    -moz-transition: scale, 1.3s, linear;
+    -ms-transition: scale, 1.3s, linear;
+    -o-transition: scale, 1.3s, linear;
+    transition: scale, 1.3s, linear
+}
+.app .design .btn-help {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #FFF
+}
+.app .design .main-nav {
+    position: absolute;
+    top: 4%;
+    left: 3%;
+    width: 60%
+}
+.app .design .main-nav .nav-item {
+    color: #FFF;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 25px;
+    cursor: pointer
+}
+.app .design .main-nav .nav-item a {
+    color: #FFF
+}
+.app .design .main-nav .nav-item:hover .keyword {
+    color: #000
+}
+.app .design .main-nav .nav-item .black {
+    color: #000
+}
+.app .design .accordion {
+    position: absolute;
+    top: 8%;
+    left: 2%;
+    z-index: 3;
+}
+.app .design .accordion .options {
+    margin-left: 15px;
+    display: inline
+}
+.app .design .accordion .options>.panel-title {
+    margin-left: 18px
+}
+.app .design .accordion .options hr {
+    margin: 5px 0px;
+    width: 100px;
+    margin-left: 18px;
+    text-align: left
+}
+.app .design .accordion .options h1.panel-title {
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 3px
+}
+.app .design .accordion .options h1.panel-title .caret {
+    border-top: 6px dashed;
+    border-top: 6px solid;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    margin-top: -3px;
+    margin-right: 3px
+}
+.app .design .accordion .options .panel-title {
+    display: inline
+}
+.app .design .accordion .options .panel {
+    margin-left: 18px;
+    display: inline;
+    background-color: transparent;
+    border: 0px;
+    -webkit-box-shadow: 0 1px 1px transparent;
+    box-shadow: 0 1px 1px transparent;
+    margin-top: 0px
+}
+.app .design .accordion .options .panel .panel-heading {
+    background-color: transparent;
+    border: 0px;
+    padding: 0px;
+    display: inline
+}
+.app .design .accordion .options .panel .panel-body {
+    border: 10px;
+    background-color: #666;
+    display: inline-block
+}
+.app .design .accordion .options .panel .panel-body ul {
+    margin: 0;
+    padding: 0
+}
+.app .design .accordion .options .panel .panel-body ul li {
+    float: left;
+    list-style: none;
+    margin: 0px 5px;
+    color: #FFF;
+    border: 1px solid transparent;
+    padding: 5px;
+    border-radius: 3px;
+    max-width: 70px;
+    -webkit-transition: opacity, 0.2s, ease-in;
+    -khtml-transition: opacity, 0.2s, ease-in;
+    -moz-transition: opacity, 0.2s, ease-in;
+    -ms-transition: opacity, 0.2s, ease-in;
+    -o-transition: opacity, 0.2s, ease-in;
+    transition: opacity, 0.2s, ease-in;
+    -webkit-transition: border, 0.2s, ease-in;
+    -khtml-transition: border, 0.2s, ease-in;
+    -moz-transition: border, 0.2s, ease-in;
+    -ms-transition: border, 0.2s, ease-in;
+    -o-transition: border, 0.2s, ease-in;
+    transition: border, 0.2s, ease-in
+}
+.app .design .accordion .options .panel .panel-body ul li:hover {
+    opacity: .5
+}
+.app .design .accordion .options .panel .panel-body ul li img {
+    display: block;
+    margin-bottom: 7px
+}
+.app .design .accordion .options .panel .panel-body ul li.active {
+    border: 1px solid #C3C3C3
+}
+.app .design .accordion .options a {
+    color: #FFF;
+    font-weight: 600;
+    font-size: 12px;
+    outline: none;
+    line-height: 1em
+}
+.app .design .accordion .options a.collapsed {
+    color: #fff
+}
+.app .design .accordion .options a.expanded {
+    color: #000
+}
+.app .design .accordion .options a:hover {
+    color: #000
+}
+.app .design .accordion .options a:focus {
+    outline: none
+}
+.app .design .accordion .options .options-dimensions img {
+    margin-bottom: 7px
+}
+.app .design .accordion .options .options-dimensions span {
+    color: #FFF
+}
+.app .design .accordion .options .options-dimensions .form-inline:first-child {
+    margin-top: 5px
+}
+.app .design .accordion .options .options-dimensions .form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle
+}
+.app .design .accordion .options .options-dimensions .form-inline label {
+    color: #CCC;
+    margin-bottom: 0;
+    vertical-align: bottom
+}
+.app .design .accordion .options .options-dimensions .form-inline label:first-child {
+    min-width: 38px
+}
+.app .design .accordion .options .options-dimensions .form-inline input {
+    display: inline-block;
+    vertical-align: middle;
+    color: #CCC;
+    background-color: transparent;
+    padding-bottom: 0px;
+    border: 0px;
+    box-shadow: none;
+    border-bottom: 1px dashed #FFF;
+    border-radius: 0px;
+    width: 40px;
+    margin-left: 4px;
+    margin-right: 5px;
+    height: 23px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center
+}
+.app .design .accordion .options .options-dimensions .form-inline button {
+    background-color: transparent;
+    border: 0;
+    padding: 7px 0px 0px 10px;
+    color: #CCC
+}
+.app .design .accordion .options .options-dimensions .form-inline button:last-child {
+    border: 5px;
+    padding: 7px 0px 0px 5px
+}
+.app .design .ceiling {
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%
+}
+.app .design .wall {
+    width: 100%;
+    height: 69%;
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: 7%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%
+}
+.app .design .floor {
+    width: 100%;
+    height: 23%;
+    position: absolute;
+    background-repeat: no-repeat;
+    bottom: 0;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%
+}
+.app .design .door-container {
+    position: absolute;
+    bottom: 206px;
+    width: 400px;
+    height: 250px;
+    max-width: 600px;
+    max-height: 300px;
+    left: 300px;
+    z-index: 2  ;
+}
+.app .design .door-container .door-frame {
+    width: 102%;
+    height: 102%;
+    position: absolute;
+    top: -1%;
+    left: -1%
+}
+.app .design .door-container .door-frame .glass {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+}
+.app .design .door-container .door-frame .glass .door {
+    width: 100%;
+    height: 100%;
+    border-image-slice: 2% 2% 2% 2%;
+    border-image-width: 5px 5px 5px 5px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: stretch stretch;
+    behavior: url(/js/libs/PIE.htc)
+}
+.app .design .door-container.wall_slide_doors .door-frame {
+    width: 102%;
+    height: 102%;
+    position: absolute;
+    top: -1%;
+    left: -1%
+}
+.app .design .door-container.wall_slide_doors .door-frame .glass .door {
+    width: 100%;
+    height: 100%;
+    border-image-slice: 2% 2% 2% 2%;
+    border-image-width: 5px 0px 1px 0px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: stretch stretch;
+    behavior: url(/js/libs/PIE.htc)
+}
+.app .design .door-container.swing_doors .door-frame .glass .door {
+    border-image-width: 5px 5px 2px 5px
+}
+.app .design .door-container.swing_doors .doors {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 0px 0px 0px rgba(50, 50, 50, 0.75)
+}
+.app .design .door-container.doors-1.wall_slide_doors .door-frame {
+    width: 202%;
+    height: 102%;
+    position: absolute;
+    top: -1%;
+    left: -101%
+}
+.app .design .door-container.doors-1 .doors {
+    width: 100%
+}
+.app .design .door-container.doors-1 .doors.door-tokyo:last-child .glass:last-child .door {
+    border-image-width: 5px 5px 5px 5px
+}
+.app .design .door-container.doors-1 .doors.door-continental:last-child .glass:nth-child(even) .door {
+    border-image-width: 5px 5px 1px 5px
+}
+.app .design .door-container.doors-1 .doors.door-continental:last-child .glass:last-child .door {
+    border-image-width: 5px 5px 5px 5px
+}
+.app .design .door-container.doors-1 .doors.door-duot:last-child .glass:nth-child(2) .door {
+    border-image-width: 5px 5px 1px 5px
+}
+.app .design .door-container.doors-1 .doors.door-duot:last-child .glass:nth-child(3) .door {
+    border-image-width: 5px 5px 1px 5px
+}
+.app .design .door-container.doors-2.wall_slide_doors .door-frame {
+    width: 202%;
+    height: 102%;
+    position: absolute;
+    top: -1%;
+    left: -51%
+}
+.app .design .door-container.doors-2.wall_slide_doors .doors:first-child.door-continental .glass:nth-child(odd) .door {
+    border-image-width: 5px 0px 0px 5px
+}
+.app .design .door-container.doors-2.wall_slide_doors .doors:first-child.door-continental .glass:nth-child(7) .door {
+    border-image-width: 5px 0px 5px 5px
+}
+.app .design .door-container.doors-2.wall_slide_doors .doors:first-child.door-duot .glass:first-child .door {
+    border-image-width: 5px 0px 0px 5px
+}
+.app .design .door-container.doors-2.wall_slide_doors .doors:first-child.door-duot .glass:nth-child(4) .door {
+    border-image-width: 5px 0px 5px 5px
+}
+.app .design .door-container.doors-2.wall_slide_doors .doors:first-child .glass .door {
+    border-image-width: 5px 5px 0px 5px
+}
+.app .design .door-container.doors-2.wall_slide_doors .doors:first-child .glass:last-child .door {
+    border-image-width: 5px 5px 5px 5px
+}
+.app .design .door-container.doors-2.swing_doors .doors:first-child .glass .door {
+    border-image-width: 5px 5px 0px 5px
+}
+.app .design .door-container.doors-2.swing_doors .doors:first-child .glass:last-child .door {
+    border-image-width: 5px 5px 5px 5px
+}
+.app .design .door-container.doors-2.swing_doors .doors:first-child.door-continental .glass:nth-child(odd) .door {
+    border-image-width: 5px 0px 0px 5px
+}
+.app .design .door-container.doors-2.swing_doors .doors:first-child.door-continental .glass:nth-child(7) .door {
+    border-image-width: 5px 0px 5px 5px
+}
+.app .design .door-container.doors-2.swing_doors .doors:first-child.door-duot .glass:first-child .door {
+    border-image-width: 5px 0px 0px 5px
+}
+.app .design .door-container.doors-2.swing_doors .doors:first-child.door-duot .glass:nth-child(4) .door {
+    border-image-width: 5px 0px 5px 5px
+}
+.app .design .door-container.doors-2 .doors {
+    width: 50%
+}
+.app .design .door-container.doors-2 .doors.door-tokyo:last-child .glass:last-child .door {
+    border-image-width: 5px 5px 5px 5px
+}
+.app .design .door-container.doors-2 .doors.door-continental:last-child .glass:nth-child(even) .door {
+    border-image-width: 5px 5px 1px 5px
+}
+.app .design .door-container.doors-2 .doors.door-continental:last-child .glass:last-child .door {
+    border-image-width: 5px 5px 5px 5px
+}
+.app .design .door-container.doors-2 .doors.door-duot:last-child .glass:nth-child(2) .door {
+    border-image-width: 5px 5px 1px 5px
+}
+.app .design .door-container.doors-2 .doors.door-duot:last-child .glass:nth-child(3) .door {
+    border-image-width: 5px 5px 1px 5px
+}
+.app .design .door-container.doors-3 .doors {
+    width: 33.33%
+}
+.app .design .door-container.doors-3 .doors.door-tokyo:last-child .glass:last-child .door {
+    border-image-width: 5px 5px 5px 5px
+}
+.app .design .door-container.doors-3 .doors.door-duot:last-child .glass:nth-child(2) .door {
+    border-image-width: 5px 5px 1px 5px
+}
+.app .design .door-container.doors-3 .doors.door-duot:last-child .glass:nth-child(3) .door {
+    border-image-width: 5px 5px 1px 5px
+}
+.app .design .door-container.doors-3 .doors.door-continental:last-child .glass:nth-child(even) .door {
+    border-image-width: 5px 5px 1px 5px
+}
+.app .design .door-container.doors-3 .doors.door-continental:last-child .glass:last-child .door {
+    border-image-width: 5px 5px 5px 5px
+}
+.app .design .door-container.doors-4 .doors {
+    width: 25%
+}
+.app .design .door-container.doors-4 .doors:nth-child(2) .glass .door {
+    border-image-width: 5px 5px 1px 5px
+}
+.app .design .door-container.doors-4 .doors:nth-child(2) .glass:last-child .door {
+    border-image-width: 5px 5px 5px 5px
+}
+.app .design .door-container.doors-4 .doors:last-child .glass .door {
+    border-image-width: 5px 5px 1px 5px
+}
+.app .design .door-container.doors-4 .doors:last-child .glass:last-child .door {
+    border-image-width: 5px 5px 5px 5px
+}
+.app .design .door-container.doors-5 .doors {
+    width: 20%
+}
+.app .design .door-container.doors-5 .doors:nth-child(2) .glass .door {
+    border-image-width: 5px 5px 1px 5px
+}
+.app .design .door-container.doors-5 .doors:nth-child(2) .glass:last-child .door {
+    border-image-width: 5px 5px 5px 5px
+}
+.app .design .door-container.doors-5 .doors:last-child .glass .door {
+    border-image-width: 5px 5px 1px 5px
+}
+.app .design .door-container.doors-5 .doors:last-child .glass:last-child .door {
+    border-image-width: 5px 5px 5px 5px
+}
+.app .design .door-container.doors-6 .doors {
+    width: calc(100% / 6);
+}
+
+.app .design .door-container.doors-6 .doors:nth-child(3) .glass .door {
+    border-image-width: 5px 5px 5px 5px
+}
+.app .design .door-container.doors-6 .doors.door-trio:nth-child(3) .glass:last-child .door {
+    border-image-width: 5px 5px 5px 5px
+}
+.app .design .door-container.doors-6 .doors.door-trio:nth-child(3) .glass .door {
+    border-image-width: 5px 5px 1px 5px
+}
+.app .design .door-container.doors-6 .doors.door-continental:nth-child(3) .glass:nth-child(even) .door,
+.app .design .door-container.doors-6 .doors.door-continental:nth-child(6) .glass:nth-child(even) .door {
+    border-image-width: 5px 5px 1px 5px
+}
+.app .design .door-container.doors-6 .doors.door-continental:nth-child(3n) .glass:last-child .door {
+    border-image-width: 5px 5px 5px 5px
+}
+.app .design .door-container.doors-6 .doors.door-quattro:nth-child(3) .glass:last-child .door {
+    border-image-width: 5px 5px 5px 5px
+}
+.app .design .door-container.doors-6 .doors.door-quattro:nth-child(3) .glass .door {
+    border-image-width: 5px 5px 1px 5px
+}
+.app .design .door-container.doors-6 .doors.door-pentagon:nth-child(3) .glass:last-child .door {
+    border-image-width: 5px 5px 5px 5px
+}
+.app .design .door-container.doors-6 .doors.door-pentagon:nth-child(3) .glass .door {
+    border-image-width: 5px 5px 1px 5px
+}
+.app .design .door-container.doors-6 .doors.door-pentagon:last-child .glass:last-child .door {
+    border-image-width: 5px 5px 5px 5px
+}
+.app .design .door-container.doors-6 .doors.door-tokyo:nth-child(3n) .glass:last-child .door {
+    border-image-width: 5px 5px 5px 5px
+}
+.app .design .door-container.doors-6 .doors.door-tokyo:nth-child(3n) .glass .door {
+    border-image-width: 5px 5px 1px 5px
+}
+.app .design .door-container.doors-6 .doors.door-duot:nth-child(3) .glass:nth-child(even) .door {
+    border-image-width: 5px 1px 1px 5px
+}
+.app .design .door-container.doors-6 .doors.door-duot:nth-child(3) .glass:nth-child(2) .door,
+.app .design .door-container.doors-6 .doors.door-duot:nth-child(3) .glass:nth-child(3) .door {
+    border-image-width: 5px 5px 1px 5px
+}
+.app .design .door-container.doors-6 .doors.door-duot:nth-child(3) .glass:nth-child(4) .door {
+    border-image-width: 5px 1px 5px 5px
+}
+.app .design .door-container.doors-6 .doors.door-duot:nth-child(3) .glass:nth-child(5) .door {
+    border-image-width: 5px 5px 5px 5px
+}
+.app .design .door-container.doors-6 .doors.door-duot:nth-child(6) .glass:nth-child(even) .door {
+    border-image-width: 5px 5px 1px 5px
+}
+.app .design .door-container.doors-6 .doors.door-duot:nth-child(6) .glass:nth-child(3) .door {
+    border-image-width: 5px 5px 1px 5px
+}
+.app .design .door-container.doors-6 .doors.door-duot:nth-child(6) .glass:nth-child(4) .door {
+    border-image-width: 5px 1px 5px 5px
+}
+.app .design .door-container.doors-6 .doors.door-duot:nth-child(6) .glass:nth-child(5) .door {
+    border-image-width: 5px 5px 5px 5px
+}
+.app .design .door-container .doors-list {
+    width: 100%;
+    height: 100%
+}
+.app .design .door-container .doors {
+    -webkit-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.75);
+    height: 100%;
+    float: left;
+    position: relative
+}
+.app .design .door-container .doors .glass:last-child .door {
+    border-image-width: 5px 1px 5px 5px
+}
+.app .design .door-container .doors.door-solo .glass {
+    height: 100%
+}
+.app .design .door-container .doors.door-trio:last-child .glass:last-child .door {
+    border-image-width: 5px 5px 5px 5px
+}
+.app .design .door-container .doors.door-trio:last-child .glass .door {
+    border-image-width: 5px 5px 1px 5px
+}
+.app .design .door-container .doors.door-trio .glass {
+    height: 33.33%
+}
+.app .design .door-container .doors.door-quattro:last-child .glass:last-child .door {
+    border-image-width: 5px 5px 5px 5px
+}
+.app .design .door-container .doors.door-quattro:last-child .glass .door {
+    border-image-width: 5px 5px 1px 5px
+}
+.app .design .door-container .doors.door-quattro .glass {
+    height: 25%
+}
+.app .design .door-container .doors.door-pentagon:last-child .glass:last-child .door {
+    border-image-width: 5px 5px 5px 5px
+}
+.app .design .door-container .doors.door-pentagon:last-child .glass .door {
+    border-image-width: 5px 5px 1px 5px
+}
+.app .design .door-container .doors.door-pentagon .glass {
+    height: 20%
+}
+.app .design .door-container .doors.door-tokyo:last-child .glass .door {
+    border-image-width: 5px 5px 1px 5px
+}
+.app .design .door-container .doors.door-tokyo .glass {
+    height: 16.66%
+}
+.app .design .door-container .doors.door-continental .glass {
+    height: 25%;
+    width: 50%;
+    float: left
+}
+.app .design .door-container .doors.door-continental .glass:nth-child(odd) .door {
+    border-image-width: 5px 1px 1px 5px
+}
+.app .design .door-container .doors.door-continental .glass:nth-child(7) .door {
+    border-image-width: 5px 1px 5px 5px
+}
+.app .design .door-container .doors.door-duot .glass {
+    height: 33.33%;
+    width: 50%;
+    float: left
+}
+.app .design .door-container .doors.door-duot .glass:nth-child(3) {
+    width: 100%;
+    float: initial;
+    clear: both
+}
+.app .design .door-container .doors.door-duot .glass:first-child .door {
+    border-image-width: 5px 1px 1px 5px
+}
+.app .design .door-container .doors.door-duot .glass:nth-child(4) .door {
+    border-image-width: 5px 1px 5px 5px
+}
+.app .design .door-container .doors .glass {
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+}
+.app .design .door-container .doors .glass .door {
+    width: 100%;
+    height: 100%;
+    border-image-slice: 2% 2% 2% 2%;
+    border-image-width: 5px 1px 1px 5px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: stretch stretch;
+    behavior: url(/js/libs/PIE.htc);
+    border-style: solid
+}
+.app .design .door-container .doors:last-child .glass .door {
+    border-image-width: 5px 5px 5px 5px
+}
+.app .design .room-style {
+    position: absolute;
+    bottom: 206px;
+    width: 400px;
+    height: 250px;
+    max-width: 600px;
+    max-height: 300px;
+    left: 300px;
+    background-repeat: repeat-x;
+    background-size: 100% 190px;
+    overflow: hidden;
+    z-index: 2;
+}
+.app .design .room-style.room_dividers img,
+.app .design .room-style.wall_slide_doors img,
+.app .design .room-style.swing_doors img {
+    width: 280px
+}
+.app .design .room-style.swing_doors img {
+    left: -90px
+}
+.app .design .room-style.wall_slide_doors img {
+    left: -93px
+}
+.app .design .room-style.closet_doors img {
+    width: 675px;
+    bottom: 0%;
+    left: -25%;
+    height: 250px
+}
+.app .design .room-style .room-floor {
+    position: absolute;
+    height: 62.5px;
+    background-position: center top;
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    bottom: 0px;
+    width: 100%
+}
+.app .design .room-style img {
+    width: 100% !important;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    margin: auto
+}
+.cuadi .wall { 
+    height: 58% !important;
+    bottom: 17% !important;
+}
+.cuadi .floor {
+    height: 32% !important; 
+}
+.cuadi .ceiling {
+    height: 40% !important;
+}
+.phukien {
+    height: 10px;
+    width: 10px;
+    right: 0;
+    top: 50%;
+    position: absolute;
+}
+.app .design .door-container.doors-2 .doors:nth-child(2) .phukien {
+    left: 0;
+}
+
+@media screen and (max-width: 1400px) {
+    .carousel .item .carousel-caption .caption-text h1 {
+        font-size: 5em
+    }
+    .carousel .item .carousel-caption .caption-text h5 {
+        font-size: 1.3em
+    }
+}
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 6em
+    }
+    h2 {
+        font-size: 3.6em
+    }
+    h3 {
+        font-size: 2em;
+        line-height: 1em
+    }
+    h4 {
+        font-size: 2em
+    }
+    h5 {
+        font-size: 1.8em
+    }
+    .contest-entry .fieldgroup {
+        max-width: 60%
+    }
+    #header .logo {
+        width: 80%;
+        max-width: 260px
+    }
+    #header .titletext {
+        padding-left: 2rem
+    }
+}
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 3.5em;
+        line-height: .5em
+    }
+    h2 {
+        font-size: 3em
+    }
+    h3 {
+        font-size: 3em;
+        line-height: 1em
+    }
+    h4 {
+        font-size: 1.4em
+    }
+    h5,
+    h6 {
+        font-size: 1.2em
+    }
+    h3.border-bottom:after {
+        width: 72%
+    }
+    a.more-button {
+        webkit-transition: none;
+        -moz-transition: none;
+        transition: none
+    }
+    .contest-entry .fieldgroup {
+        max-width: 100%
+    }
+    #header .logo {
+        width: 60%;
+        max-width: 260px
+    }
+    #sidebar {
+        display: none;
+        padding: 2rem 4.5% 3rem
+    }
+    #sidebar ul.navigation {
+        margin-bottom: 2rem
+    }
+    #sidebar ul.navigation li {
+        font-size: 1.5em;
+        line-height: 1.5em;
+        padding: 1em 0
+    }
+    .carousel ol.carousel-indicators {
+        top: auto;
+        right: 8px;
+        bottom: -4px
+    }
+    .carousel .item .carousel-caption .caption-text h1 {
+        font-size: 2.7em
+    }
+    .carousel .item .carousel-caption .caption-text h5 {
+        font-size: 1em
+    }
+    .carousel .item .carousel-caption .caption-text h5.lined {
+        line-height: 1.5em;
+        letter-spacing: 2px;
+        margin-bottom: 0 !important
+    }
+    .carousel .item .carousel-caption .caption-text a.more-button {
+        width: 100%;
+        height: 75%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-indent: -999px;
+        overflow: hidden;
+        background: transparent !important
+    }
+    .hero {
+        height: 20em
+    }
+    .hero h3 {
+        width: 100%;
+        display: block;
+        padding-top: 0
+    }
+    .front-4 {
+        padding: 16% 12% 20%;
+        height: auto
+    }
+    .front-4 .holder {
+        width: 100%;
+        -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+        transform: translateY(0%)
+    }
+    .front-4 .holder h3 {
+        margin-top: 0%;
+        margin-bottom: 0
+    }
+    .front-4 .holder a.more-button {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-indent: -999px;
+        overflow: hidden;
+        background: transparent !important
+    }
+    .article h5 {
+        font-size: 1.4em
+    }
+    .article .thumbnail {
+        margin-bottom: 2rem
+    }
+    .contest_steps .row-eq-height {
+        display: block
+    }
+    .poster-design .hero h3 {
+        width: 100%
+    }
+    .poster-design .hero.auto-height {
+        float: left;
+        margin-top: 40px
+    }
+    .poster-design .hero.auto-height .linkback {
+        margin-top: 40px
+    }
+}
+@media screen and (max-width: 320px) {
+    .carousel-caption .caption-text h5.lined {
+        width: 92%
+    }
+}
+
+furniture__img {
+    left: 0 !important;
+}

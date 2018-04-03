@@ -8,6 +8,6 @@ ReactDOM.render(
     <Provider store={store}>
         <Index />
     </Provider>,
-    document.getElementById('wrapper')
+    document.getElementById('wrapper asd')
 );
 // yhyhy
